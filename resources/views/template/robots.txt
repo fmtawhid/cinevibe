@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /dashboard/
+Allow: /
+
+Sitemap: https://cinevibemedia.com/sitemap.xml 

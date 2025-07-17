@@ -1,0 +1,41 @@
+@layer utilities {
+    .transition-max-height {
+        transition-property: max-height;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 800ms;
+    }
+
+    .mobile-menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    .mobile-menu.open {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+    .mobile-dropdown-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.8s ease-in-out;
+    }
+
+    .mobile-dropdown-content.open {
+        max-height: 1000px;
+    }
+
+    .mobile-menu::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .mobile-menu::-webkit-scrollbar-track {
+        background: #1a1a1a;
+    }
+
+    .mobile-menu::-webkit-scrollbar-thumb {
+        background: black;
+        border-radius: 5px;
+    }
+}

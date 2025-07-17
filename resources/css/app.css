@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.video-card {
+    transition: transform 0.3s ease;
+}
+.video-card:hover {
+    transform: translateY(-5px);
+}
+.ratio-16x9 {
+    background: #000;
+}

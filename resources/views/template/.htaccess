@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Redirect www to non-www and force HTTPS
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(.*)$ https://cinevibemedia.com/$1 [L,R=301]
